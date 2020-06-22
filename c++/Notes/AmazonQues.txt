@@ -1,0 +1,44 @@
+Important questions - 
+
+http://www.geeksforgeeks.org/fundamentals-of-algorithms/#AnalysisofAlgorithms
+
+1 - http://www.geeksforgeeks.org/count-inversions-of-size-three-in-a-give-array/
+ 
+2 - http://geeksquiz.com/puzzle-27-hourglasses-puzzle/
+ 
+3 - http://www.geeksforgeeks.org/design-a-stack-with-find-middle-operation/
+ 
+4 – Split a linked list, on the condition that element is greater than previous element and less than next element, move it to first list and if not satisfied move it to second list. Keep order maintained.
+ 
+1 -> 2 -> 4 -> 3 -> 5 -> 4 -> 7 - > 10
+ 
+1 -> 2 -> 7-> 10                                   4 -> 3 -> 5 -> 4
+ 
+5 - http://www.geeksforgeeks.org/sum-of-bit-differences-among-all-pairs/
+ 
+6 - http://www.geeksforgeeks.org/find-the-missing-number/
+ 
+7 - http://www.geeksforgeeks.org/kth-largest-element-in-a-stream/
+ 
+8 - http://www.geeksforgeeks.org/find-k-such-that-all-elements-in-kth-row-are-0-and-kth-column-are-1-in-a-boolean-matrix/
+ 
+9 - http://www.geeksforgeeks.org/number-of-triangles-in-directed-and-undirected-graphs/
+ 
+10 - http://www.geeksforgeeks.org/check-if-a-given-array-can-represent-preorder-traversal-of-binary-search-tree/
+ 
+11 - http://www.geeksforgeeks.org/minimize-cash-flow-among-given-set-friends-borrowed-money/
+ 
+ 
+12 - http://www.geeksforgeeks.org/validity-of-a-given-tic-tac-toe-board-configuration/
+ 
+13 - http://www.geeksforgeeks.org/length-largest-subarray-contiguous-elements-set-1/
+ 
+14 - http://www.geeksforgeeks.org/find-closest-leaf-binary-tree/
+ 
+15 - http://geeksquiz.com/check-given-graph-tree/
+ 
+16 - http://www.geeksforgeeks.org/snake-ladder-problem-2/
+ 
+17 - http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/
+ 
+18 - http://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/

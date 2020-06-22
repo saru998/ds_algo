@@ -1,0 +1,13 @@
+CONVERT ARRAY OF STRING TO INT
+input().split(' ').map(x=>Number(x))
+
+SUM OF ARRAY
+arr.reduce((a, b) =>a + b, 0);
+
+
+VS code regex
+#(.*) 
+for removing comments
+
+^\s*$\n
+ for removing blank lines
