@@ -23,7 +23,7 @@ const combination_util = (arr,r,temp,i,j)=>{
 }
 
 const arr = [1,2,3,4,5]
-r=2
+r=3
 combination(arr,r)
 
 

@@ -4,8 +4,10 @@ def decimal_to_binary(num):
     return str(num % 2)
 
 
-for x in range(1,11):
-    print(x,decimal_to_binary(x))
+# for x in range(1,11):
+#     print(x,decimal_to_binary(x))
 
-print("single-----")
+# print("single-----")
+# print(decimal_to_binary(5))
+
 print(decimal_to_binary(5))

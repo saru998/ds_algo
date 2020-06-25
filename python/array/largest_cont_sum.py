@@ -4,8 +4,11 @@ def largest_cont_sum(arr):
     max_sum = curr_sum = arr[0]
 
     for num in arr[1:]:
+
         curr_sum = max(curr_sum + num, num)
-        max_sum = max(curr_sum, max_sum)
+
+        max_sum = max(curr_sum, max_sum)    #just for taking max
+
     return max_sum
 
 

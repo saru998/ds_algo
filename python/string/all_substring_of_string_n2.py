@@ -3,5 +3,5 @@ def subString(s, n):
         for x in range(i+1,n+1): 
             print(s[i: x]); 
   
-s = "abcd"; 
+s = "abc"; 
 subString(s,len(s))
