@@ -3,18 +3,13 @@ class binary_heap(object):
         self.heaplist = [0]
         self.size = 0
 
-    def shiftLightUp(self,i):
-        while i//2 > 0:
-            if self.heaplist[i] < self.heaplist[i//2]:
-                tmp = self.heaplist[i//2]
-                self.heaplist[i//2] = self.heaplist[i]
-                self.heaplist[i] = tmp
-            i = i //2
-
-    def insert(self,k):
-        self.heaplist.append(k)
-        self.size = self.size + 1
-        self.shiftLightUp(self.size)
+    def build_heap(self,alist):
+        i = len(alist)//2
+        self.size = len(alist)
+        self.heaplist = [0] + alist
+        while (i>0):
+            self.shiftHeavyDown(i)
+            i = i -1
 
     def shiftHeavyDown(self,i):
         while (i*2) <= self.size:
@@ -33,6 +28,20 @@ class binary_heap(object):
                 return i*2
             else:
                 return i*2+1
+
+    def shiftLightUp(self,i):
+        while i//2 > 0:
+            if self.heaplist[i] < self.heaplist[i//2]:
+                tmp = self.heaplist[i//2]
+                self.heaplist[i//2] = self.heaplist[i]
+                self.heaplist[i] = tmp
+            i = i //2
+
+    def insert(self,k):
+        self.heaplist.append(k)
+        self.size = self.size + 1
+        self.shiftLightUp(self.size)
+
                 
     def delMin(self):
         retval = self.heaplist[1]
@@ -42,20 +51,13 @@ class binary_heap(object):
         self.shiftHeavyDown(1)
         return retval
 
-    def build_heap(self,alist):
-        i = len(alist)//2
-        self.size = len(alist)
-        self.heaplist = [0] + alist
-        while (i>0):
-            self.shiftHeavyDown(i)
-            i = i -1
 
 
 a = binary_heap()
-a.build_heap([9,5,2,8,3,1,12])
+a.build_heap([9,5,2,8,3,1])
 print(a.heaplist)
-print(a.delMin())
-print(a.insert(4))
+# print(a.delMin())
+# print(a.insert(4))
 
 
 

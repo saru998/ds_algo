@@ -7,3 +7,6 @@
 #converting string to list
     exp = list(input())
 
+#converting list to integers to single string
+    ''.join(list(map(str,arr)))
+
