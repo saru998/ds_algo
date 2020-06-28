@@ -16,7 +16,7 @@
             "request": "launch",
             "name": "node",
             "runtimeExecutable": "node",
-            "program": "${workspaceFolder}/test.js",
+            "program": "${file}",
             "restart": true,
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
