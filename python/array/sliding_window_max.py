@@ -17,7 +17,7 @@ def sliding_window_max(arr, k):
             
             print(max_value)
             if j<n:
-                max_value = arr[j]
+                max_value = arr[i]
         i+=1
 
 sliding_window_max([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3)

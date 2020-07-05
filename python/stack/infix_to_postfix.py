@@ -14,7 +14,8 @@ for _ in range(test_case):
                 output +=temp.pop()
             temp.pop()
         elif exp[i] == '+' or exp[i] == '-':
-            while(temp[-1]=='+' or temp[-1]=='-' or temp[-1]=='*' or temp[-1]=='/' or temp[-1]=='^'):
+            while(len(temp)>0 and 
+                (temp[-1]=='+' or temp[-1]=='-' or temp[-1]=='*' or temp[-1]=='/' or temp[-1]=='^')):
                 output +=temp.pop()
             temp.append(exp[i])
         elif exp[i] == '*' or exp[i] == '/':
@@ -30,6 +31,11 @@ for _ in range(test_case):
         i+=1
     print(output)
 
+# input
+# a+b*(c^d-e)^(f+g*h)-i
+
+# output
+# abcd^e-fgh*+^*+i-
     
     
     
