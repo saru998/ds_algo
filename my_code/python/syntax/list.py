@@ -10,3 +10,7 @@
 #converting list to integers to single string
     ''.join(list(map(str,arr)))
 
+#filter
+    res_list = list(filter(lambda x: test_list[x] == 3, range(len(test_list)))) 
+
+
