@@ -1,25 +1,23 @@
+arr=[1, 2, -3, 0, 4, -5, 2, -1]
 
-const longest_distinct_character = (str) => {
-    const seen = {}
-    let i = 0
-    let max_length = 0
-    let end = 0
-    let out=[]
+const print_sum_0 =(arr)=>{
 
-    for (let j = 0; j < str.length; j++) {
-        if (str[j] in seen) {
-            i = Math.max(i, seen[str[j]] + 1)
+    let curr_sum=arr[0]
+    let i=0
+    let j=0
+    while(j<arr.length){
+        if(curr_sum>0){
+            while(curr_sum>0){
+                curr_sum -=arr[j]
+                i+=1
+            }
+        }else if(curr_sum == 0){
+            console.log(arr.slice(i,j))
+        }else{
+            curr_sum +=arr[j]
         }
-        seen[str[j]] = j
-
-        if (j - i + 1 > max_length) {
-            max_length = j - i + 1
-            end = j
-            out.push(str.slice(i, end + 1))
-        }
-
+        j+=1
     }
-    console.log(out[out.length-1])
-}
-str = "sabcaaa"
-longest_distinct_character(str)
+}   
+
+print_sum_0(arr)
