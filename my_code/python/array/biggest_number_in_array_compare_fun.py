@@ -20,4 +20,12 @@ for _ in range(int(t)):
     n = input()
     arr = list(map(int, input().split(' ')))
 
-    single_largest_number_from_array(arr)
+    print(single_largest_number_from_array(arr))
+
+# Input
+# 1
+# 5
+# 1 0 3 4 5
+
+# output
+# [5, 4, 3, 1, 0]
